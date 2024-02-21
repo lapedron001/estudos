@@ -1,0 +1,11 @@
+{
+    "configuracao": {
+      "idioma": "portugues",
+      "temaEscuro": true
+    },
+    "usuarios": [
+      { "nome": "Ana", "idade": 25 },
+      { "nome": "Carlos", "idade": 30 }
+    ]
+  }
+  

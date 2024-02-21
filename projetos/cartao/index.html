@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="estilos/media-querys.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+<main>
+  
+  <article>
+
+    <aside id="card2">
+      <p id="cvc">000</p>
+    </aside>
+
+    <aside id="card1">
+      <img src="images/card-logo.svg" alt="">
+      <h1 id="card">0000 0000 0000 0000</h1>
+      <p id="nome">Jane Appleseed</p>
+      <h4 id="Data">00/00</h4>
+    </aside>
+    
+  </article>
+  
+  <form>
+    <span id="p">
+      <p>
+        <label for="inome">Cardholder Name</label>
+        <input type="text" name="nome" id="inome" 
+        placeholder="e.g. Jane Appleseed" maxlength="19">
+        <p id="p1">Wrong format, text only</p>
+      </p>
+      
+      <p>
+        <label for="icard">Card Number</label>
+        <input type="text" name="card" id="icard" placeholder="e.g. 1234 5678 9123 0000" maxlength="19"  oninput="CardNumber(this)">
+        <p id="p2">Wrong format, Number only</p>
+      </p>
+      <p id="ola">
+        <label for="idata">Exp. Date (MM/YY)</label>
+        <input type="text" name="mes" id="imes" placeholder="MM" maxlength="2">
+        <input type="text" name="ano" id="iano" placeholder="YY" maxlength="2">
+        <span id="p3">Cant't be blank</span>
+        <span id="p4">Cant't be blank</span>
+      </p>
+      
+      <p id="ola">
+        <label for="icvc">CVC</label>
+        <input type="text" name="cvc" id="icvc" placeholder="e.g. 123" maxlength="3">
+        <p id="p5">Cant't be blank</p>
+      </p>
+    </span>
+      
+  <section id="res">
+    <img src="images/icon-complete.svg" alt="">
+    <h1>Thank you!</h1>
+    <p>We've added your card details</p>
+  </section>
+    
+    <input type="button" value="Confirm" id="botao" onclick="verificar()">
+  </form>
+  
+  
+  <script src="script.js"></script>
+</main>
+</body>
+</html>

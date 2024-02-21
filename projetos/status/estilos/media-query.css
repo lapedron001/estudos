@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 620px) {
+    main{
+        width: 600px;
+        height: 250px;
+    }
+
+    main > div#imagem{
+        float: right;
+        width: 300px;
+        height: 250px;
+    }
+
+    main > div#texto{
+        float: left;
+        width: 210px;
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="estilos/media-querys.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+<main>
+  <section>
+    <h1>Learn to code by watching others</h1>
+    <p>
+      See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+      but understanding how developers think is invaluable.
+    </p>
+  </section>
+  
+  <article>
+    <p><span id="ola">Try it free 7 days</span> then $20/mo. thereafter</p>
+  </article>
+  
+  <form>
+    <input type="text" name="fname" id="fname" placeholder="First Name " class="input"> <aside id="res1"></aside>
+    <input type="text" name="lname" id="lname" placeholder="Last Name" class="input"> <aside id="res2"></aside>
+    <input type="email" name="mail" id="mail" placeholder="Email Address" class="input"> <aside id="res3"></aside>
+    <input type="password" name="sen" id="sen" placeholder="Password" class="input"> <aside id="res4"></aside>
+    <input type="button" value="CLAIM YOUR FREE TRIAL" onclick="verificar()" required>
+    <aside>By clicking the button, you are agreeing to our <span>Terms and Services</span></aside>
+  </form>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

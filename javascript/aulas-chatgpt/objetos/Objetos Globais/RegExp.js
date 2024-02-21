@@ -1,0 +1,1 @@
+const padrao = /\d+/; // Expressão regular que corresponde a um ou mais dígitos

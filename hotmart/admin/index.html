@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <label for="saldis">saldo disponível</label>
+        <input type="number" name="saldis" id="saldis">
+        <label for="saltot">saldo total</label>
+        <input type="number" name="saltot" id="saltot">
+        <button onclick="salvarEmLocalStorage()">Salvar Localmente</button>
+    </main>
+
+    <script>
+        function salvarEmLocalStorage() {
+            var saldisValor = document.getElementById("saldis").value;
+            var saltotValor = document.getElementById("saltot").value;
+
+            // Validar se os valores são números
+            if (isNaN(saldisValor) || isNaN(saltotValor)) {
+                alert('Por favor, insira valores numéricos válidos.');
+                return;
+            }
+
+            // Arredondar para duas casas decimais
+            saldisValor = parseFloat(saldisValor).toFixed(2);
+            saltotValor = parseFloat(saltotValor).toFixed(2);
+
+            // Criar um objeto JavaScript com os valores
+            var dados = {
+                "saldo_disponivel": saldisValor,
+                "saldo_total": saltotValor
+            };
+
+            // Converter o objeto para uma string JSON
+            var jsonString = JSON.stringify(dados);
+
+            // Armazenar a string JSON localmente
+            localStorage.setItem('dados', jsonString);
+
+            alert('Dados salvos localmente.');
+        }
+    </script>
+</body>
+</html>

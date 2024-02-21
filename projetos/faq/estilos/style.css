@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "WorkSans";
+    src: url(../assets/fonts/WorkSans-Italic-VariableFont_wght.ttf);
+}
+
+html, body{
+    position: relative;
+    width: 95vw;
+    height: 95vh;
+    background-color: hsl(275, 100%, 97%);
+    background: url(../assets/images/background-pattern-mobile.svg) no-repeat fixed;
+    background-size: contain;
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 270px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.479);
+    background-color: white;
+    font-family: "WorkSans";
+}
+
+h1{
+    display: inline;
+    color: hsl(292, 42%, 14%)    ;
+    width: 100px;
+    font-style: normal;
+    margin: 0px 0px 0px 30px;
+}
+
+img{
+    width: 30px;
+}
+
+h2{
+    color: hsl(292, 42%, 14%);
+    display: inline-block;
+    font-size: 15px;
+    width: 200px;
+    padding: 10px 10px 10px 0px;
+}
+
+h2:hover {
+    color: hsl(292, 40%, 40%);
+}
+
+a > img {
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+p{
+    display: none;
+    color: hsl(292, 16%, 49%);
+    font-size: 15px;
+}

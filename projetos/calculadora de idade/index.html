@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="estilos/style.css">
+  
+  <title>Age calculator app</title>
+</head>
+<body>
+  <main>
+    <section>
+      <p id="p1">Day <input type="number" name="dia" id="dia" placeholder="DD"><span id="s1">Must be valid day</span></p>
+      <p id="p2">Month <input type="number" name="mes" id="mes" placeholder="MM"><span id="s2">Must be valid Month</span></p>
+      <p id="p3">Year <input type="number" name="ano" id="ano" placeholder="YYYY"><span id="s3">Must be valid Year</span></p>
+    </section>
+    <article>
+      <input type="button" value="" onclick="idade()">
+    </article>
+    <aside id="res">
+      <p id="tag"><strong>--</strong> years</p>
+      <p id="tag"><strong>--</strong> months</p>
+      <p id="tag"><strong>--</strong> days</p>
+    </aside>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

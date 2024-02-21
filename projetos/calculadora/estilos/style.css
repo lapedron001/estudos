@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(222, 26%, 31%);
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    font-family: 'League Spartan';
+}
+
+main > p{
+    color: white;
+    text-align: end;
+    width: 280px;
+    margin-bottom: -10px;
+}
+
+main > p > span{
+    margin-left: 14px;
+}
+
+article#theme{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 330px;
+    padding: 10px;
+    color: white;
+}
+
+h3{
+    margin-right: -40px;
+    font-size: 11px;
+}
+
+
+.switch-toggle {
+    float: left;
+    padding: 1px;
+    border-radius: 10px;
+    box-sizing: content-box;
+    background: hsl(223, 31%, 20%);;
+ }
+ .switch-toggle input {
+    cursor: pointer;
+   position: absolute;
+   opacity: 0;
+ }
+ .switch-toggle input + label {
+   padding: 8px;
+   margin: 2px;
+   border-radius: 10px;
+   transition: ease 0.5s;
+   float:left;
+   color: #fff;
+   cursor: pointer;
+ }
+ .switch-toggle input:checked + label {
+   background: hsl(6, 63%, 50%);
+ }
+
+article#res{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: white;
+    background-color: hsl(224, 36%, 15%);
+    font-size: 3em;
+    padding: 20px;
+    border-radius: 10px;
+    height: 50px;
+}
+
+
+article#calc {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: hsl(223, 31%, 20%);
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#calc > div.num {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(221, 14%, 31%);
+    background-color: hsl(30, 25%, 89%);
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: 1px 3px 1px hsl(28, 16%, 65%);
+    font-size: 1.8em;
+    width: 55px;
+    height: 55px;
+}
+
+#calc > div.apg {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: 1px 3px 1px hsl(224, 28%, 35%);
+    font-size: 1.2em;
+    width: 55px;
+    height: 55px;
+}
+#calc > div#igual {
+    position: absolute;
+    top: 77.6%;
+    left: 28.1%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(6, 63%, 50%);
+    color: white;
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: 1px 3px 1px hsl(6, 70%, 34%);
+    font-size: 1.2em;
+    width: 190px;
+    height: 55px;
+}
+
+
+#tema2 {
+    background-color: hsl(0, 0%, 90%);
+}
+#tema2 > main > p {
+    color: hsl(60, 10%, 19%);
+}
+
+#tema2 > main > article#theme{
+    color: hsl(60, 10%, 19%);
+}
+
+#tema2 > main > article#theme > .switch-toggle{
+    background-color:  hsl(0, 5%, 81%);
+}
+
+#tema2 > main > article#theme >  .switch-toggle input:checked + label{
+    background-color: hsl(25, 98%, 40%);
+}
+
+#tema2 > main > article#res{
+    color: hsl(60, 10%, 19%);
+    background-color: hsl(0, 0%, 93%);
+}
+
+#tema2 > main > article#calc{
+    background-color:  hsl(0, 5%, 81%);
+}
+
+#tema2 > main > article#calc > .num{
+    color: hsl(60, 10%, 19%);
+    background-color: hsl(45, 7%, 89%);
+}
+
+#tema2 > main > article#calc > .apg{
+    background-color: #3B8086;
+}
+
+#tema2 > main > article#calc > div#igual{
+    background-color: hsl(25, 98%, 40%);
+}
+
+#tema3 {
+    background-color: hsl(268, 75%, 9%);
+}
+#tema3 > main > p {
+    color: hsl(52, 100%, 62%);
+}
+
+#tema3 > main > article#theme{
+    color: hsl(52, 100%, 62%);
+}
+
+#tema3 > main > article#theme > .switch-toggle{
+    background-color:  hsl(268, 71%, 12%);
+}
+
+#tema3 > main > article#theme >  .switch-toggle input:checked + label{
+    background-color: #00e0d1;
+}
+
+#tema3 > main > article#res{
+    color: hsl(52, 100%, 62%);
+    background-color: hsl(268, 47%, 21%);
+}
+
+#tema3 > main > article#calc{
+    background-color: hsl(268, 71%, 12%);
+}
+
+#tema3 > main > article#calc > .num{
+    color: hsl(52, 100%, 62%);
+    background-color: hsl(268, 47%, 21%);
+    box-shadow: 1px 3px 1px hsl(285, 91%, 52%);
+}
+
+#tema3 > main > article#calc > .apg{
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 1px 3px 1px hsl(290, 70%, 36%);
+}
+
+#tema3 > main > article#calc > div#igual{
+    background-color: #00e0d1;
+    box-shadow: 1px 3px 1px hsl(177, 92%, 70%);
+}

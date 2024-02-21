@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background:  hsl(27, 66%, 92%);
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'DM Sans';
+    width: 350px;
+    text-align: center;
+}
+
+main > article{
+    background: hsl(10, 79%, 65%) url(../images/logo.svg) no-repeat fixed right;
+    background-size: 50px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+main > article > p{
+    color:  hsl(27, 66%, 92%);
+    width: 100px;
+}
+
+main > article > h2{
+    color: hsl(27, 66%, 92%);
+    width: 100px;
+}
+
+section{
+    background:  hsl(33, 100%, 98%);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+section > article{
+    border-bottom: solid 1px hsl(27, 66%, 92%);
+}
+
+section > article > h1{
+    color: hsl(25, 47%, 15%);
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+section > article > p{
+    display: inline-block;
+    color: hsl(28, 10%, 53%);
+    font-size: 13px;
+    width: 41px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+section > article > p > span{
+    cursor: pointer;
+    display: inline-block;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 3px;
+    width: 30px;
+}
+
+section > article > p > span:hover{
+    background-color: hsla(10, 79%, 65%, 0.699);
+}
+
+#mon{height: 40px;}
+#tue{height: 80px;}
+#wed{height: 120px; background-color: hsl(186, 34%, 60%);}
+#wed:hover{background-color: hsla(186, 34%, 60%, 0.678);}
+#thu{height: 72px;}
+#fri{height: 60px;}
+#sat{height: 100px;}
+#sun{height: 65px;}
+
+samp{
+    color: hsl(27, 66%, 92%);
+    background-color: hsl(25, 47%, 15%);
+    width: 45px;
+}
+
+aside{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px 20px 0px;
+}
+
+div#total{
+    width: 150px;
+}
+
+div#total > p{
+    color: hsl(28, 10%, 53%);
+}
+
+div#total > h1{
+    color: hsl(25, 47%, 15%);
+    font-size: 2em;
+}
+
+div#last{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+div#last > h3{
+    color: hsl(25, 47%, 15%);
+}
+
+div#last > p{
+    color: hsl(28, 10%, 53%);
+}

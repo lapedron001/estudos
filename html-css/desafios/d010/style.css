@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "droid";
+    src: url("fontes/idroid.otf") format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}       
+
+body{
+    background-color: lightgoldenrodyellow;
+}
+
+header{
+    background-image: linear-gradient(to top, #003514, #26A763);
+    margin: -10px;
+    border: 0px;
+    padding-top: 40px;
+}
+
+.cabeça1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.cabeça2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-align: center;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    padding: 5px;
+    color: #9CE3BF;
+}
+
+a:hover {
+    background-color: #013318;
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.548);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+h1{
+    color: #002B13;
+    font-family: "droid";
+    margin: 0px;
+}
+
+.h22{
+    color: #013318;
+    background-image: linear-gradient(to right,#82E0AC, #ffff);
+    font-family: "droid";
+}
+
+p{
+    text-indent: 22px;
+}
+
+p > a{
+    color: #004515;
+    padding: 0px;
+}
+
+p > a::after{
+    content: url(imagens/icons8-link-16.png);
+}
+
+.s{
+    color: green;
+}
+
+img {
+    width: 100%;
+}
+
+article > .bugdroid{
+    max-width: 350px;
+    margin: auto;
+    display: block;
+}
+
+article > iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.lista{
+    background-color: #73CB9B;
+    border-radius: 10px;
+    padding: 1px 10px 10px 10px;
+    margin: 10px;
+}
+
+ul > li {
+    columns: auto;
+}
+
+.h11{
+    background-color: #175A37;
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    margin: -10px;
+}
+
+ul{
+    margin: auto;
+}
+
+footer{
+    background-color: #175A37 ;
+    margin: -10px;
+    padding: 1px;
+    text-align: center;
+    color: white;
+}

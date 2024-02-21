@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="estilos/style.css">
+  <title>Frontend Mentor | Multi-step form</title>
+</head>
+<body>
+ <main>
+   <nav>
+    <p id="nav1">1</p>
+      <div class="nav">
+        <p>Step 1</p>
+        <h1>Your info</h1>
+      </div>
+      <p id="nav2">2</p>
+      <div class="nav">
+        <p>Step 2</p>
+        <h1>Select plan</h1>
+      </div>
+      <p id="nav3">3</p>
+      <div class="nav">
+        <p>Step 3</p>
+        <h1>Add-ons</h1>
+      </div>
+      <p id="nav4">4</p>
+      <div class="nav">
+        <p>Step 4</p>
+        <h1>Summary</h1>
+      </div>
+   </nav>
+   
+    <article id="passo1">
+      <section>
+        <h2>Personal info</h2>
+        <h3>Please provide your name, email address, and phone number.</h3>
+        <p>
+          <label for="inome">Name</label>
+          <input type="text" name="nome" id="inome" placeholder="e.g. Stephen King">
+        </p>
+        <p>
+          <label for="imail">Email Address</label>
+          <input type="email" name="mail" id="imail" placeholder="e.g. stephenking@lorem.com">
+        </p>
+        <span id="s1"></span>
+        <p>
+          <label for="itel">Phone Number</label>
+          <input type="number" name="tel" id="itel" placeholder="e.g. +1 234 567 890">
+        </p>
+        <span id="s2"></span>
+      </section>
+      <footer>
+        <input type="button" value="Next Step" onclick="next(1)">
+      </footer>
+    </article>
+    <article id="passo2">
+      <section>
+        <h2>Select your plan</h2>
+        <h3>You have the option of monthly or yearly billing.</h3>
+        <p id="i1" onclick="selecionar(1)">
+          <img src="assets/images/icon-arcade.svg" alt="Arcade">
+          
+            Arcade
+            <span id="sp1">$9/mo</span>
+          
+        </p>
+        <p id="i2" onclick="selecionar(2)">
+          <img src="assets/images/icon-advanced.svg" alt="Advanced">
+          Advanced
+          <span id="sp2">$12/mo</span>
+        </p>
+        <p id="i3" onclick="selecionar(3)">
+          <img src="assets/images/icon-pro.svg" alt="pro">
+          Pro
+          <span id="sp3">$15/mo</span>
+        </p>
+        <h4>
+          Monthly
+          <label class="switch">
+            <input type="checkbox" id="checke" onclick="valor()">
+            <span class="slider round"></span>
+          </label>
+          Yearly
+        </h4>
+        <h4 id="mo">2 mouth frees</h4>
+      </section>
+      <footer>
+        <input type="button" id="back" value="Go Back" onclick="back(1)">
+        <input type="button" value="Next Step" onclick="next(2)">
+      </footer>
+      <!-- Step 2 end -->
+    </article>
+    <article id="passo3"> 
+      <!-- Step 3 start -->
+      <section>
+        <h2>Pick add-ons</h2>
+        <h3>Add-ons help enhance your gaming experience.</h3>
+        <b id="add1">
+          <input type="checkbox" name="add1" id="c1" onclick="check(1)">
+          <aside>
+            <h4>Online service</h4>
+            <p>Access to multiplayer games</p>
+          </aside>
+          <span id="sp4">+$1/mo</span>
+        </b>
+        <b id="add2">
+          <input type="checkbox" name="add2" id="c2" onclick="check(2)">
+          <aside>
+            <h4>Larger storage</h4>
+            <p>Extra 1TB of cloud save</p>
+          </aside>
+          <span id="sp5">+$2/mo</span>
+        </b>
+        <b id="add3">
+          <input type="checkbox" name="add3" id="c3" onclick="check(3)">
+          <aside>
+            <h4>Customizable Profile</h4>
+            <p>Custom theme on your profile</p>
+          </aside>
+          <span id="sp6">+$2/mo</span>
+        </b>
+      </section>
+      <footer>
+        <input type="button" id="back" value="Go Back" onclick="back(2)">
+        <input type="button" value="Next Step" onclick="next(3)">
+      </footer>
+      <!-- Step 3 end -->
+    </article>
+    <article id="passo4">
+      <!-- Step 4 start -->
+      <section>
+        <h2>Finishing up</h2>
+        <h3>Double-check everything looks OK before confirming.</h3>
+        <aside>
+          <div>
+            <b>
+              <h4 id="h4"></h4>
+              <p>Change</p>
+            </b>
+            <span id="v"></span>
+          </div>
+          <b>
+            <h5 id="h5"></h5>
+            <h6 id="h6"></h6>
+          </b>
+          <b>
+            <h5 id="h7"></h5>
+            <h6 id="h8"></h6>
+          </b>
+          <b>
+            <h5 id="h9"></h5>
+            <h6 id="h10"></h6>
+          </b>
+        </aside>
+        <b>
+          <h3>Total </h3><span id="total"></span>
+        </b>
+      </section>
+      <footer>
+        <input type="button" id="back" value="Go Back" onclick="back(3)">
+        <input type="button" value="Confirm" onclick="next(4)">
+      </footer>
+      <!-- Step 4 end -->
+    </article>
+    <article id="passo5">
+      <section>
+        <!-- Step 5 start -->
+        <img src="assets/images/icon-thank-you.svg" alt="">
+        <h2>Thank you!</h2>
+        <h3>
+          Thanks for confirming your subscription! We hope you have fun
+          using our platform. If you ever need support, please feel free
+          to email us at support@loremgaming.com.
+        </h3>
+        <!-- Step 5 end -->
+      </section>
+    </article>
+ </main>
+ <script src="script.js"></script>
+</body>
+</html>

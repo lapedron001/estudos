@@ -1,0 +1,1 @@
+const regexEmail = /^[a-zA-ZO-9._-]+@[a-zA-ZO-9.-]+\.[a-zA-Z]{2,4}$/

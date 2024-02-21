@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="estilos/style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+<main>
+  
+  <section id="texto">
+    <h1>Simple, traffic-based pricing</h1>
+    <p>Sign-up for our 30-day trial. No credit card required.</p>
+  </section>
+  
+  <section id="page">
+    <article>
+      <h2><output id="pagi">100k</output> Pageviews</h2>
+      <input type="range" name="pag" id="ipag" min="1" max="5" oninput="valor()">
+      <p><output id="out">$16.00</output><output id="m"> /month</output></p>
+      
+      <p>
+        Monthly Billing
+        <label class="switch">
+          <input type="checkbox" id="check" onclick="valor()">
+          <span class="slider round"></span>
+        </label>
+        Yearly Billing <span>25%</span>
+      </p>
+    </article>
+    
+    <aside>
+      <p><img src="images/icon-check.svg" alt="">Done</i></i>Unlimited websites</p>
+      <p><img src="images/icon-check.svg" alt="">Done</i>100% data ownership</p>
+      <p><img src="images/icon-check.svg" alt="">Email reports</p>
+      
+      <input type="button" value="Start my trial">
+    </aside>
+  </section>
+  <script src="script.js"></script>
+</main>
+</body>
+</html>

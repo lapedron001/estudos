@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: hsl(0, 100%, 74%) url(../images/bg-intro-mobile.png);
+}
+
+main{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    
+    height: 90vh;
+    font-family: "Poppins";
+}
+
+main > section > h1{
+    color: white;
+    margin: 30px 10px 10px 10px;
+}
+
+main > section > p{
+    color: rgba(255, 255, 255, 0.678);
+    margin: 10px 10px 70px 10px;
+}
+
+main > article{
+    color: rgba(255, 255, 255, 0.678);
+    background-color: hsl(248, 32%, 49%);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.377);
+}
+
+main > article:hover{
+    background-color: hsl(248, 49%, 61%);
+    cursor: pointer;
+}
+
+main > article > p > span {
+    color: white;
+}
+
+main > form{
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.377);
+}
+
+main > form > input{
+    display: block;
+    margin: 10px auto 10px auto;
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px rgba(0, 0, 0, 0.322);
+}
+
+input::placeholder{
+    color: rgba(0, 0, 0, 0.664);
+}
+
+main > form > input[type='button']{
+    font-weight: 700;
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    cursor: pointer;
+}
+
+main > form > input[type='button']:hover{
+    background-color: hsl(154, 76%, 61%);
+}
+
+main > form > aside {
+    font-size: 10px;
+    color: gray;
+}
+
+main > form > aside > span{
+    color: red;
+} 
+
+main > form > aside > p {
+    color: red;
+    text-align: right;
+    margin-right: 20px;
+}
+
+/*
+img {
+    position: absolute;
+    top: 7%;
+    left: 85%;
+}*/

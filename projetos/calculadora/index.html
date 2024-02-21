@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="estilos/style.css">
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+  <main>
+    <p><span>1</span> <span>2</span> <span>3</span></p>
+    <article id="theme">
+      <h1>calc</h1>
+      <p><h3>THEME</h3>
+        <div class="switch-toggle switch-3 switch-candy">
+
+          <input id="on" name="state-d" type="radio" checked="checked" onclick="theme(1)" />
+          <label for="on" onclick="theme(1)"></label>
+        
+          <input id="na" name="state-d" type="radio" onclick="theme(2)"/>
+          <label for="na" class="disabled" onclick="theme(2)"></label>
+        
+          <input id="off" name="state-d" type="radio" onclick="theme(3)"/>
+          <label for="off" onclick="theme(3)"></label>
+        
+        </div>
+      </p>
+    </article>
+    
+    <article id="res">
+    </article>
+    <article id="calc">
+      <div id="7" class="num" onclick="add('7')">7</div>
+      <div id="8" class="num" onclick="add('8')">8</div>
+      <div id="9" class="num" onclick="add('9')">9</div>
+      <div id="del" class="apg" onclick="deletel()">DEL</div>
+      <div id="4" class="num" onclick="add('4')">4</div>
+      <div id="5" class="num" onclick="add('5')">5</div>
+      <div id="6" class="num" onclick="add('6')">6</div>
+      <div id="+" class="num" onclick="add('+')">+</div>
+      <div id="1" class="num" onclick="add('1')">1</div>
+      <div id="2" class="num" onclick="add('2')">2</div>
+      <div id="3" class="num" onclick="add('3')">3</div>
+      <div id="-" class="num" onclick="add('-')">-</div>
+      <div id="." class="num" onclick="add('.')">.</div>
+      <div id="0" class="num" onclick="add('0')">0</div>
+      <div id="/" class="num" onclick="add('/')">/</div>
+      <div id="x" class="num" onclick="add('*')">x</div>
+      <div id="reset" class="apg" onclick="reset()">RESET</div>
+      <div id="igual" onclick="calcular()">=</div>
+    </article>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

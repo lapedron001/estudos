@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="estilos/style.css">
+  <title>Frontend Mentor | Expenses chart component</title>
+
+</head>
+<body>
+<main>
+  
+  <article>
+    <p>My balance</p>
+    <h2>$921.48</h2>
+  </article>
+  
+  <section>
+    <article>
+      <h1>Spending - Last 7 days</h1>
+      
+      <p><samp id="mon1"></samp><span id="mon" onmouseenter="popup('mon')" onmouseleave="esconderpopup('mon')"></span> mon</p>
+      <p><samp id="tue1"></samp><span id="tue" onmouseenter="popup('tue')" onmouseleave="esconderpopup('tue')"></span>tue</p>
+      <p><samp id="wed1"></samp><span id="wed" onmouseenter="popup('wed')" onmouseleave="esconderpopup('wed')"></span>wed</p>
+      <p><samp id="thu1"></samp><span id="thu" onmouseenter="popup('thu')" onmouseleave="esconderpopup('thu')"></span>thu</p>
+      <p><samp id="fri1"></samp><span id="fri" onmouseenter="popup('fri')" onmouseleave="esconderpopup('fri')"></span>fri</p>
+      <p><samp id="sat1"></samp><span id="sat" onmouseenter="popup('sat')" onmouseleave="esconderpopup('sat')"></span>sat</p>
+      <p><samp id="sun1"></samp><span id="sun" onmouseenter="popup('sun')" onmouseleave="esconderpopup('sun')"></span>sun</p>
+    </article>
+    
+    <aside>
+      <div id="total">
+        <p>Total this month</p>
+        <h1>$478.33</h1>
+      </div>
+      
+      <div id="last">
+        <h3>+2.4%</h3>
+        <p>from last month</p>
+      </div>
+    </aside>
+  </section>
+  
+  <script src="script.js"></script>
+</main> 
+</body>
+</html>

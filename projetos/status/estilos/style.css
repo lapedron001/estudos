@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97vw;
+    height: 97vh;
+    background-color: hsl(233, 47%, 7%);
+}
+
+main{
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    height: 500px;
+    width: 250px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+main > div#imagem{
+    background: purple url(../images/image-header-mobile.jpg) no-repeat ;
+    background-size: cover;
+    height: 150px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+main > div#texto{
+    width: 200px;
+    padding: 25px;
+}
+
+main > div#texto > h1{
+    color: rgba(255, 255, 255, 0.76);
+    font-family: "Inter";
+    font-size: 1.1em;
+    margin: 0px 10px 10px 10px;
+}
+
+main > div#texto > h1 > span{
+    color: hsl(277, 64%, 61%);
+}
+
+main > div#texto > p{
+    color: rgba(255, 255, 255, 0.596);
+    font-family: "Lexend Deca";
+    font-size: 0.7em;
+    margin: 0px 10px 10px 10px;
+}
